@@ -1,7 +1,6 @@
 # DemoAWS Lmada
 
-Step: 1. In the existing project install serverless globally it not
-[npm install -g serverless] 2. serverless config credentials --provider aws --key <your-key> --secret <your-secrete-key>
+Step: 1. In the existing project install serverless globally it not [npm install -g serverless] 2. serverless config credentials --provider aws --key <your-key> --secret <your-secrete-key>
 
     3. serverless create -t <template-name>
 
