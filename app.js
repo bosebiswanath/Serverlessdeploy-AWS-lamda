@@ -1,7 +1,6 @@
 const express = require('express')
 const axios = require('axios');
 const app = express()
-const PORT= 9001;
 app.use(express.json())
 app.use(express.urlencoded({extended : true}))
  
@@ -63,11 +62,17 @@ app.get('/getcountry',async (req,res,next)=>{
     }
 })
 
+
+app.get('/', (req,res,next)=>{
+    res.send('looking for default route')
+})   
+
+
 app.use((err,req,res,next)=>{
     res.status(err.status || 500)
 })
 
-
-app.listen(PORT, ()=>{
-    console.log(`Server listn on PORT ${PORT}`)
-})
+module.exports= app;
+// app.listen(PORT, ()=>{
+//     console.log(`Server listn on PORT ${PORT}`)
+// })

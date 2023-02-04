@@ -1,16 +1,18 @@
 {
-  "name": "test",
+  "name": "shelltest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon server.js",
+    "deploy": "serverless deploy"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.3.0",
     "express": "^4.18.2",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "serverless-http": "^3.1.1"
   }
 }
