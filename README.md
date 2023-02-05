@@ -1,4 +1,4 @@
-# DemoAWS Lmada
+# DemoAWS Lamda
 
 Step Followed:
 
